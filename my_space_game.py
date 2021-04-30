@@ -293,7 +293,7 @@ def fireLasers(laser):
     if player.laserActive == 1:  # active status is used to prevent continuous shoot when holding space key
         player.laserActive = 0
         clock.schedule(makeLaserActive, 0.2)  # schedule an event (function, time afterwhich event will occur)
-        sounds.laserfire02.play()  # play sound effect
+        sounds.laserfire01.play()  # play sound effect
         lasers.append(laser)  # add laser to lasers list
           
 #to show on screem
@@ -341,7 +341,7 @@ def draw():
 
     #timer
     timer = "Time: " + str(elp_time)
-    screen.draw.text(timer, topleft=(896,42), fontsize=45, color="orange")
+    screen.draw.text(timer, topleft=(875,42), fontsize=45, color="orange")
         
     #showing score on screen
     show_score = "Score: " + str(score)
